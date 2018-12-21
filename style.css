@@ -1,0 +1,102 @@
+:root{
+  --primary: #006064;
+  --secondary1: #00BFA5;
+  --secondary2: #69F0AE;
+  --tertiary: #80CBC4;
+}
+
+body, main, div, h1, label, input, p, span{
+  font-family: nunito;
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  color: var(--primary);
+  width: 300px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 2em;
+}
+
+h1, label{
+  width: 300px;
+  font-weight: 800;
+}
+
+.superscript{
+  font-weight: 900;
+  vertical-align: super;
+  font-size: 0.9em;
+  color: var(--secondary2);
+}
+
+.title{
+  font-size: 0.9em;
+  float: left;
+  margin-bottom: 1.5em;
+}
+
+.tagline{
+  color: var(--secondary1);
+  font-size: 0.5em;
+  line-height: 0.75em;
+}
+
+input{
+  float: left;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid var(--secondary1);
+  margin-bottom: 2em;
+}
+
+input[placeholder]{
+  font-size: 1em;
+  color: var(--tertiary);
+}
+
+input[value]{
+  color: var(--secondary1);
+}
+
+label, .label{
+  font-weight: 900;
+  font-size: 0.8em;
+  float: left;
+  margin-bottom: 1em;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.output{
+  padding-top: 2em;
+  clear: both;
+}
+
+.result{
+  font-size: 2em;
+  font-weight: 900;
+  color: var(--secondar1);
+  clear: both;
+  margin-bottom: 0.5em;
+}
+
+#calc-result{
+  font-weight: 900;
+  color: var(--secondary2);
+  font-size: 3.5em;
+  line-height: 1em;
+}
+
+.note{
+  font-size: 0.7em;
+  color: var(--tertiary);
+}

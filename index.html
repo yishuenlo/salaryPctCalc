@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Average Annual Percent Salary Raise Calculator</title>
+  </head>
+  <body>
+    <main>
+      <h1><span class="tagline">Average Annual</span> <span class="title">Salary Increase Percentage Calculator</span></h1>
+
+      <div class="inputs">
+        <label  for="startSalary">Starting Salary </label>
+        <input id="start_salary" type="number" name="startSalary" value="" placeholder="What's your starting salary?" required min="1" max="1000000" autocomplete="off">
+      </div>
+
+      <div class="inputs">
+        <label  for="currentSalary">Current Salary </label>
+        <input id="current_salary" type="number" name="currentSalary" value="" placeholder="What's your current salary?" required min="1" max="1000000" autocomplete="off">
+      </div>
+
+      <div class="inputs">
+        <label  for="experience">Years of Experience</label>
+        <input id="experience" type="number" step="0.5" name="experience" value="" placeholder="How long have you been working?" required min="1" max="100" autocomplete="off">
+      </div>
+
+      <div class="output">
+        <p class="label">Inflation Adjusted Annual Increase<span class="superscript">+</span></p>
+        <p class="result"><span id="calc-result"></span> %</p>
+        <p class="note">+ Average inflation from 1997 to 2017 is 2.26%.</p>
+      </div>
+    </main>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
