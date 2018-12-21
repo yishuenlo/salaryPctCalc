@@ -52,7 +52,7 @@ input{
 }
 
 input:focus{
-  border: none;
+  outline: none;
 }
 
 input[placeholder]{
