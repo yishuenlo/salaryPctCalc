@@ -21,12 +21,13 @@ function calcPercent(startingSalary, currentSalary, yearsOfExperience){
 };
 
 expDisplay.onkeyup = function() {calcPercent()};
-currentSalaryDisplay.onkeyup = function() {calcPercent()};
-startSalaryDisplay.onkeyup = function() {calcPercent()};
 
-// if(Number(expDisplay.value) > 0){
-//   expDisplay.onkeyup = function() {calcPercent()};
-//   currentSalaryDisplay.onkeyup = function() {calcPercent()};
-//   startSalaryDisplay.onkeyup = function() {calcPercent()};
-//   alert(expDisplay.value);
-// };
+startSalaryDisplay.onkeyup = function() {
+  if(Number(expDisplay.value) > 0){
+    calcPercent()
+  }};
+
+currentSalaryDisplay.onkeyup = function() {
+  if(Number(expDisplay.value) > 0){
+    calcPercent()
+  }};
